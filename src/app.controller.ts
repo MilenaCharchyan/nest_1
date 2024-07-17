@@ -20,10 +20,5 @@ export class AppController {
   getGood(@Param("x")x :string, @Query("name") z:string){
     return [ x, z]
   }
-
-  @Post()
-  post(@Body()obj){
-    return obj
-  }
   
 }
